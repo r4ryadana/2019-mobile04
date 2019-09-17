@@ -25,7 +25,7 @@ public class ProfileBundleActivity extends AppCompatActivity {
             // TODO: display value here
             usernameText.setText(extras.getString("username"));
             nameText.setText(extras.getString("name"));
-            ageText.setText(extras.getString("age"));
+            ageText.setText(String.valueOf(getIntent().getIntExtra("age", 0)));
         }
     }
 }
